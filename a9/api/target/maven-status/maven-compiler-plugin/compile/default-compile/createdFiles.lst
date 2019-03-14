@@ -1,0 +1,4 @@
+boot\entities\dept.class
+boot\service\servicefeign.class
+boot\service\Fallback.class
+boot\service\Fallback$1.class

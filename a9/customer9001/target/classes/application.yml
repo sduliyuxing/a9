@@ -1,0 +1,9 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost7001:7001/eureka,http://localhost7002:7002/eureka,http://localhost7003:7003/eureka
+     #      defaultZone: http://localhost:7001/eureka

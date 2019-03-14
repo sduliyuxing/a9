@@ -1,0 +1,24 @@
+server:
+  port: 5001
+
+spring:
+   application:
+    name: zuul5001
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://localhost:7001/eureka
+       defaultZone: http://localhost7001:7001/eureka,http://localhost7002:7002/eureka,http://localhost7003:7003/eureka
+  instance:
+    instance-id: zuul
+    prefer-ip-address: true
+
+zuul:
+  prefix: /abc
+  ignored-services: "*"
+  routes:
+    mydept.serviceId: provider
+    mydept.path: /abc/*
+
+

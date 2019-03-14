@@ -1,0 +1,15 @@
+<?lyx.taotao.xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE lyx.taotao.mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-lyx.taotao.mapper.dtd">
+
+<lyx.taotao.mapper namespace="boot.dao.deptdao">
+    <insert id="add" parameterType="dept">
+        insert into dept(dname,d_source) values (#{dname},#{d_source});
+    </insert>
+    <select id="get" resultType="dept">
+        select did,dname,d_source from dept where did=#{did};
+    </select>
+    <select id="getall" resultType="dept">
+        select did,dname,d_source from dept;
+    </select>
+ </lyx.taotao.mapper>

@@ -1,0 +1,25 @@
+package boot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+import java.util.zip.DataFormatException;
+
+/**
+ * @Title eureka7001
+ * @Description
+ * @Copyright: 版权所有 (c) 2018 - 2019
+ * @Company: 电子商务中心
+ * @Author lyx
+ * @Version 1.0.0
+ * @Create 2018\11\19 0019 9:00
+ */
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@EnableEurekaServer
+public class eureka7001 {
+    public static void main(String[] args) {
+        SpringApplication.run(eureka7001.class,args);
+    }
+}
