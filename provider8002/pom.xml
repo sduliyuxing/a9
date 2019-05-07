@@ -15,7 +15,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>boot</groupId>
+            <groupId>lyx</groupId>
             <artifactId>api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
